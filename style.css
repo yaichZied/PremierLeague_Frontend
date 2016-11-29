@@ -1,0 +1,160 @@
+body{
+	margin:0;
+	padding: 0;
+}
+#headerContainer{
+	height: 20vh;
+	width: 100vw;
+}
+#clubsLogos{
+	height: 7vh;
+	width: 85vw;
+	float: right;
+	padding-top: 10px !important;
+}
+.logoCss{
+	height: 30px;
+	width: 35px;
+}
+.logoContainer{
+	margin-left: 32px;
+
+}
+.champContainer{
+	height: 20vh;
+	width: 10vw;
+	float: left;
+}
+.design{
+	width: 0;
+	height: 0;
+	border-bottom: 11.5vh solid #e90052;
+	border-left: 8.5vh solid transparent;
+	margin-top:	8.4vh;
+	margin-left: .5vw;
+}
+.disgnContainer{
+	height: 20vh;
+	width: auto;
+	float: left;
+}
+#champLogo{
+	padding-left: 0vw;
+	height: 10vw;
+	width: 10vw;
+}
+.menuBar{
+	display: flex;
+  align-items: center;
+	height: 11.5vh;
+	width: 85.4vw;
+	float: right;
+	background-color: #e90052;
+}
+.menuFirst{
+	cursor: pointer;
+	margin-left: 5vw;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+	color: white;
+}
+#PlayerOfMonthContainer{
+	height: 48vh;
+	width: 100vw;
+	margin-top: -3.5vh;
+	background-color: #c2d6d6;
+}
+.playerContainer{
+	float: left;
+	height: 36vh;
+	width: 30vw;
+	opacity: 1;
+	margin-left: 2.4vw;
+	margin-top: 2vh;
+	border-radius: 2px;
+	box-shadow: 5px 5px 5px #888888;
+}
+.playerContainer:hover{
+	opacity: 0.9;
+	height: 37vh;
+	width: 31vw;
+}
+#textPlayer{
+  font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+  text-align: center;
+  height: 6vh;
+  border: 2px solid #c2d6d6;
+  padding-top: 1vh;
+  width: 100vw;
+  color: #e90052;
+  font-size: 1.5em;
+  font-weight: bold;
+  }
+  #countdownContainer{
+  	height: 80px;
+  	width: 100vw;
+  	background-color: #806000;
+  }
+  #countdown{
+  	font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+  	font-weight: bold;
+  	margin-left: 100px;
+  	color: white;
+  	padding-top: 10px;
+  	
+  }
+  #counting{
+  	margin-left: 100px;
+  	color: white;
+  }
+  #nationalLogo{
+  	margin-left: 20px;
+  	margin-top: 10px;
+  	height: 40px;
+  	width: 40px;
+  	float: left;
+
+  }
+  #countdowntext{
+  	font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+  	color: white;
+  	padding-top: 20px;
+  	margin-left: 300px;
+  	float: left;
+  }
+  #oppenentLogo{
+  	margin-top: -40px;
+  	margin-right: 20px;
+  	height: 45px;
+  	width: 45px;
+  	float: right;
+
+  }
+  #days{
+  	height: 15px;
+  	width: 13px;
+  	margin-left: 552px;
+  	border-top : 1px solid white;
+  }
+  #hour{
+  	height: 15px;
+  	width: 13px;
+  	margin-left: 592px;
+  	margin-top: -16px;
+  	border-top : 1px solid white;
+  }
+  #minutes{
+  	margin-top: -16px;
+  	height: 15px;
+  	width: 13px;
+  	margin-left: 630px;
+  	border-top : 1px solid white;
+  }
+  #seconds{
+  	height: 15px;
+  	width: 13px;
+  	margin-top: -16px;
+  	margin-left: 670px;
+  	border-top : 1px solid white;
+  }

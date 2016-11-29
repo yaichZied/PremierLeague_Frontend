@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script type="text/javascript">
+	(function () {
+    angular.module('app', []).directive('countdown', [
+        'Util',
+        '$interval',
+        function (Util, $interval) {
+            return {
+                restrict: 'A',
+                scope: { date: '@' },
+                link: function (scope, element) {
+                    var future;
+                    future = new Date(scope.date);
+                    $interval(function () {
+                        var diff;
+                        diff = Math.floor((future.getTime() - new Date().getTime()) / 1000);
+                        return element.text(Util.dhms(diff));
+                    }, 1000);
+                }
+            };
+        }
+    ]).factory('Util', [function () {
+            return {
+                dhms: function (t) {
+                    var days, hours, minutes, seconds;
+                    days = Math.floor(t / 86400);
+                    t -= days * 86400;
+                    hours = Math.floor(t / 3600) % 24;
+                    t -= hours * 3600;
+                    minutes = Math.floor(t / 60) % 60;
+                    t -= minutes * 60;
+                    seconds = t % 60;
+                    return [
+                        days + '  \u00A0 \u00A0 ',
+                        hours + '  \u00A0 \u00A0 ',
+                        minutes+ '  \u00A0 \u00A0 ',
+                        seconds 
+                    ].join(' ');
+                }
+            };
+        }]);
+}.call(this));
+
+
+	</script>
+</head>
+<body>
+<div id="headerContainer">
+	<div class="champContainer">
+		<img src="img/tunis.png" id="champLogo">	
+	</div>
+	<div class="disgnContainer"> <div class="design"></div></div>
+	<div id="clubsLogos">
+		<a  class="logoContainer">
+			<img src="img/css.png" class="logoCss">
+		</a>
+		<a  class="logoContainer">
+			<img src="img/CA_Bizertin.png" class="logoCss">
+		</a>
+				<a  class="logoContainer">
+			<img src="img/AS_Marsa.png" class="logoCss">
+		</a>
+				<a  class="logoContainer">
+			<img src="img/Asglogo.png" class="logoCss">
+		</a>
+				<a  class="logoContainer">
+			<img src="img/download.png" class="logoCss">
+		</a>
+				<a  class="logoContainer">
+			<img src="img/download.jpg" class="logoCss">
+		</a>
+				<a  class="logoContainer">
+			<img src="img/Eosb.png" class="logoCss">
+		</a>
+				<a  class="logoContainer">
+			<img src="img/esm.png" class="logoCss">
+		</a>
+				<a  class="logoContainer">
+			<img src="img/Esperance_Sportive_de_Zarzis.png" class="logoCss">
+		</a>
+				<a  class="logoContainer">
+			<img src="img/est.png" class="logoCss">
+		</a>
+				<a  class="logoContainer">
+			<img src="img/ess.jpg" class="logoCss">
+		</a>
+				<a  class="logoContainer">
+			<img src="img/JS_Kairouan.png" class="logoCss">
+		</a>
+				<a  class="logoContainer">
+			<img src="img/Logo_Club_africain.svg.png" class="logoCss">
+		</a>
+				<a  class="logoContainer">
+			<img src="img/logo_ust.png" class="logoCss">
+		</a>
+				<a  class="logoContainer">
+			<img src="img/Olympique_de_Beja-1-.gif" class="logoCss">
+		</a>
+				<a  class="logoContainer">
+			<img src="img/Usbg.png" class="logoCss">
+		</a>
+	</div>
+	<div class="menuBar">
+		<a href="" class="menuFirst">Home</a>
+		<a href="" class="menuFirst">Teams</a>
+		<a href="" class="menuFirst">Scheduale</a>
+		<a href="" class="menuFirst">Standing</a>
+		<a href="" class="menuFirst">National Team</a>
+		<a href="" class="menuFirst">About</a>
+	</div>
+</div>
+<div id="countdownContainer">
+	<img id="nationalLogo" src="img/2000px-Tunisia_logo.svg.png"></img>
+	<div id="countdowntext">National Team Next Match</div>
+	<div id="countdown" ng-app='app'>
+    		<span id="counting" countdown='' date='December 15, 2016 16:00:00'>&nbsp;</span>
+    		<div id="days">D</div><div id="hour">H</div><div id="minutes">M</div><div id="seconds">S</div>
+	</div>
+	<img id="oppenentLogo" src="img/D.R.-Congo.png"></img>
+</div>
+<div id="PlayerOfMonthContainer">
+<div id="textPlayer">Choose The Best Player Of The Month</div>
+	<div class="playerMonthConatainer">
+		<img src="img/j1.jpg" class="playerContainer">
+	</div>
+	<div class="playerMonthConatainer">
+		<img src="img/j2.jpg" class="playerContainer">
+	</div>
+	<div class="playerMonthConatainer">
+		<img src="img/j3.jpg" class="playerContainer">
+	</div>
+
+</div>
+</body>
+</html>
