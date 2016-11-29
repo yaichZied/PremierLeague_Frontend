@@ -131,6 +131,21 @@ body{
   	float: right;
 
   }
+  #tl{
+  	height: 40px;
+  	width: 40px;
+  	margin-left: 850px;
+  	margin-top: -37px;
+  	float: left;
+  }
+  #gl{
+  	float: left;
+  	height: 45px;
+  	width: 45px;
+
+  	margin-left: 910px;
+  	margin-top: -42px;
+  }
   #days{
   	height: 15px;
   	width: 13px;
@@ -155,6 +170,6 @@ body{
   	height: 15px;
   	width: 13px;
   	margin-top: -16px;
-  	margin-left: 670px;
+  	margin-left: 662px;
   	border-top : 1px solid white;
   }
