@@ -3,6 +3,7 @@
 <head>
 	<link href="style.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript">
 	(function () {
     angular.module('app', []).directive('countdown', [
@@ -48,60 +49,72 @@
 
 	</script>
 </head>
-<body>
-<div id="headerContainer">
+<body ng-app="myApps" ng-controller="myCtrls">
+<div id="headerContainer"  >
 	<div class="champContainer">
-		<img src="img/tunis.png" id="champLogo">	
+		<img src="img/0.jpg" id="champLogo">	
 	</div>
 	<div class="disgnContainer"> <div class="design"></div></div>
 	<div id="clubsLogos">
 		<a  class="logoContainer">
-			<img src="img/css.png" class="logoCss">
+			<img src="img/1.png" class="logoCss">
 		</a>
 		<a  class="logoContainer">
-			<img src="img/CA_Bizertin.png" class="logoCss">
+			<img src="img/2.png" class="logoCss">
 		</a>
 				<a  class="logoContainer">
-			<img src="img/AS_Marsa.png" class="logoCss">
+			<img src="img/3.png" class="logoCss">
 		</a>
 				<a  class="logoContainer">
-			<img src="img/Asglogo.png" class="logoCss">
+			<img src="img/4.png" class="logoCss">
 		</a>
 				<a  class="logoContainer">
-			<img src="img/download.png" class="logoCss">
+			<img src="img/5.png" class="logoCss">
 		</a>
 				<a  class="logoContainer">
-			<img src="img/download.jpg" class="logoCss">
+			<img src="img/6.png" class="logoCss">
 		</a>
 				<a  class="logoContainer">
-			<img src="img/Eosb.png" class="logoCss">
+			<img src="img/7.png" class="logoCss">
 		</a>
 				<a  class="logoContainer">
-			<img src="img/esm.png" class="logoCss">
+			<img src="img/8.png" class="logoCss">
 		</a>
 				<a  class="logoContainer">
-			<img src="img/Esperance_Sportive_de_Zarzis.png" class="logoCss">
+			<img src="img/9.png" class="logoCss">
 		</a>
 				<a  class="logoContainer">
-			<img src="img/est.png" class="logoCss">
+			<img src="img/10.png" class="logoCss">
 		</a>
 				<a  class="logoContainer">
-			<img src="img/ess.jpg" class="logoCss">
+			<img src="img/11.png" class="logoCss">
 		</a>
 				<a  class="logoContainer">
-			<img src="img/JS_Kairouan.png" class="logoCss">
+			<img src="img/12.png" class="logoCss">
 		</a>
 				<a  class="logoContainer">
-			<img src="img/Logo_Club_africain.svg.png" class="logoCss">
+			<img src="img/13.png" class="logoCss">
 		</a>
 				<a  class="logoContainer">
-			<img src="img/logo_ust.png" class="logoCss">
+			<img src="img/14.png" class="logoCss">
 		</a>
 				<a  class="logoContainer">
-			<img src="img/Olympique_de_Beja-1-.gif" class="logoCss">
+			<img src="img/15.png" class="logoCss">
 		</a>
 				<a  class="logoContainer">
-			<img src="img/Usbg.png" class="logoCss">
+			<img src="img/16.png" class="logoCss">
+		</a>
+		<a  class="logoContainer">
+			<img src="img/17.png" class="logoCss">
+		</a>
+		<a  class="logoContainer">
+			<img src="img/18.png" class="logoCss">
+		</a>
+		<a  class="logoContainer">
+			<img src="img/19.png" class="logoCss">
+		</a>
+		<a  class="logoContainer">
+			<img src="img/20.png" class="logoCss">
 		</a>
 	</div>
 	<div class="menuBar">
@@ -114,29 +127,121 @@
 	</div>
 </div>
 <div id="countdownContainer">
-	<img id="nationalLogo" src="img/CAF-Logo-1024x953.preview.png"></img>
+	<img id="nationalLogo" src="img/23.png"></img>
 	<div id="countdowntext">National Team Next Match</div>
-	<div id="countdown" ng-app='app'>
+	<div id="countdown"  > <!--ng-app='app'--> 
     		<span id="counting" countdown='' date='December 15, 2016 16:00:00'>&nbsp;</span>
     		<div id="days">D</div><div id="hour">H</div><div id="minutes">M</div><div id="seconds">S</div>
 	</div>
-	<img id="tl" src="img/2000px-Tunisia_logo.svg.png"></img>
+	<img id="tl" src="img/21.png"></img>
 	<!--<div id="vs">Vs</div>-->
-	<img id="gl" src="img/Guinea.png"></img>
-	<img id="oppenentLogo" src="img/CAF-Logo-1024x953.preview.png"></img>
+	<img id="gl" src="img/22.png"></img>
+	<img id="oppenentLogo" src="img/23.png"></img>
 </div>
 <div id="PlayerOfMonthContainer">
 <div id="textPlayer">Choose The Best Player Of The Month</div>
 	<div class="playerMonthConatainer">
-		<img src="img/j1.jpg" class="playerContainer">
+		<img src="img/j2.jpg" class="playerContainer">
 	</div>
 	<div class="playerMonthConatainer">
-		<img src="img/j2.jpg" class="playerContainer">
+		<img src="img/j1.jpg" class="playerContainer">
 	</div>
 	<div class="playerMonthConatainer">
 		<img src="img/j3.jpg" class="playerContainer">
 	</div>
-
+</div>
+<div id="standingBorderTop"></div>
+<div id="standingMenu">
+	<div class="standingBg">
+		<div id="leagueTable"> League Table </div>
+		<div id="standing">
+				<table>
+					<tr>
+						<th class="position dimens">Position</th>
+						<th class="position verti">PTS</th>
+						<th class="positionP">P</th>
+						<th class="positionP">W</th>
+						<th class="positionP">D</th>
+						<th class="positionP">L</th>
+					</tr>
+					<tr><tr><tr><tr><tr><tr></tr></tr></tr></tr></tr></tr>
+					<tr ng-repeat="item in standing">
+						<td>
+							<table >
+								<tr>
+									<td class="clasified">{{item.Standing}}</td>
+									<td class="opsa"></td>
+									<td class="teamStand">{{item.Name}}</td>
+								</tr>	
+							</table>
+						</td>
+						<td class="align ccd"> {{item.Points}}</td>
+						<td class="align">{{item.Play}}</td>
+						<td class="align">{{item.Win}}</td>
+						<td class="align">{{item.Draw}}</td>
+						<td class="align">{{item.Lose}}</td>
+					</tr>
+				</table>
+		</div>
+	</div>
+	<div class="fixtureContainer">
+		<div class="textHeda">
+			<div class="textLeft">Statistics</div>
+			<div class="textRight">Premier League</div>
+		</div>
+		<div class="fixture">
+			<div class="textHedas">
+				<div class="textLefts">Matches</div>
+				<div class="textRights">Next Fixture</div>
+			</div><br>
+			<div class="fixtureMatchContainer" ng-repeat="item in fixture">
+				<div class="matchData">
+					<div class="dataLine">{{item.Date}}</div>
+					<div class="dataLine">{{item.Time}}</div>
+					<div class="dlld">{{item.Tv1}} </div>
+					<div class="dlld">{{item.Tv2}} </div>
+					<div class="dlld">{{item.Tv3}} </div>
+				</div>
+				<div class="weather">
+					<img src="img/w1.png" class="wheather"></img>
+				</div>
+				<div class="matchInfo" ng-repeat= "it in Teams.team">
+					<div class="firstName">{{it[item.Team1ID]}}</div>
+					<div class="firstLogo "><img src="img/{{item.Team1ID}}.png" class="imgcre"></div>
+					<div class="versus">-</div>
+					<div class="firstLogo "><img src="img/{{item.Team2ID}}.png" class="imgcre"></div>
+					<div class="secondName firstName">{{it[item.Team2ID]}}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="standingBg">
+		<div id="leagueTable"> Top Scorers </div>
+		<div id="standing">
+				<table>
+					<tr>
+						<th class="position dimens">Position</th>
+						<th class="position verti">Goals</th>
+						<th class="positionP">APPS</th>
+					</tr>
+					<tr><tr><tr><tr><tr><tr></tr></tr></tr></tr></tr></tr>
+					<tr ng-repeat="item in scorer | limitTo:15">
+						<td>
+							<table >
+								<tr>
+									<td class="clasified">{{$index + 1}}</td>
+									<td class="opsa"></td>
+									<td class="teamStand">{{item.Name}}</td>
+								</tr>	
+							</table>
+						</td>
+						<td class="align ccd"> {{item.Goals}}</td>
+						<td class="align">{{item.Played}}</td>
+						
+					</tr>
+				</table>
+		</div>
+	</div>
 </div>
 </body>
 </html>

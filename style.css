@@ -17,7 +17,7 @@ body{
 	width: 35px;
 }
 .logoContainer{
-	margin-left: 32px;
+	margin-left: 18px;
 
 }
 .champContainer{
@@ -28,7 +28,7 @@ body{
 .design{
 	width: 0;
 	height: 0;
-	border-bottom: 11.5vh solid #e90052;
+	border-bottom: 11.5vh solid #3c175a;
 	border-left: 8.5vh solid transparent;
 	margin-top:	8.4vh;
 	margin-left: .5vw;
@@ -40,7 +40,7 @@ body{
 }
 #champLogo{
 	padding-left: 0vw;
-	height: 10vw;
+	height: 9vw;
 	width: 10vw;
 }
 .menuBar{
@@ -49,7 +49,7 @@ body{
 	height: 11.5vh;
 	width: 85.4vw;
 	float: right;
-	background-color: #e90052;
+	background-color: #3c175a;
 }
 .menuFirst{
 	cursor: pointer;
@@ -63,7 +63,7 @@ body{
 	height: 48vh;
 	width: 100vw;
 	margin-top: -3.5vh;
-	background-color: #c2d6d6;
+	background-color: #e9edf2;
 }
 .playerContainer{
 	float: left;
@@ -84,7 +84,7 @@ body{
   font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
   text-align: center;
   height: 6vh;
-  border: 2px solid #c2d6d6;
+  border: 2px solid #e9edf2;
   padding-top: 1vh;
   width: 100vw;
   color: #e90052;
@@ -94,7 +94,7 @@ body{
   #countdownContainer{
   	height: 80px;
   	width: 100vw;
-  	background-color: #806000;
+  	background-color: #cc0066;
   }
   #countdown{
   	font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
@@ -110,9 +110,9 @@ body{
   }
   #nationalLogo{
   	margin-left: 20px;
-  	margin-top: 10px;
-  	height: 40px;
-  	width: 40px;
+  	margin-top: 8px;
+  	height: 45px;
+  	width: 55px;
   	float: left;
 
   }
@@ -127,7 +127,7 @@ body{
   	margin-top: -40px;
   	margin-right: 20px;
   	height: 45px;
-  	width: 45px;
+  	width: 55px;
   	float: right;
 
   }
@@ -140,22 +140,22 @@ body{
   }
   #gl{
   	float: left;
-  	height: 45px;
-  	width: 45px;
+  	height: 37px;
+  	width: 37px;
 
   	margin-left: 910px;
-  	margin-top: -42px;
+  	margin-top: -39px;
   }
   #days{
   	height: 15px;
   	width: 13px;
-  	margin-left: 552px;
+  	margin-left: 566px;
   	border-top : 1px solid white;
   }
   #hour{
   	height: 15px;
   	width: 13px;
-  	margin-left: 592px;
+  	margin-left: 600px;
   	margin-top: -16px;
   	border-top : 1px solid white;
   }
@@ -163,13 +163,241 @@ body{
   	margin-top: -16px;
   	height: 15px;
   	width: 13px;
-  	margin-left: 630px;
+  	margin-left: 636px;
   	border-top : 1px solid white;
   }
   #seconds{
   	height: 15px;
   	width: 13px;
   	margin-top: -16px;
-  	margin-left: 662px;
+  	margin-left: 676px;
   	border-top : 1px solid white;
+  }
+  #standingMenu{
+  	background-color: #e9edf2;
+  	height: 150vh;
+  	width: 100vw;padding-top: 5vh;
+  }
+  #leagueTable{
+  	font-weight: bold;
+    font-size: 15px;
+    color: #4d8dba;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-left: 2vw;
+    padding-bottom: 2vh;
+    width: 25vw;
+        border-bottom: 2px solid #ccd7e3;
+    box-shadow: 0 1px 0 #FFF;
+  }
+  .verti{
+  	padding-right: 8px;
+  }
+
+  .position{
+  	padding-top: 10px;
+    font-size: 14px;
+    color: #4d8dba;
+    font-weight: bold;
+        font-family: sans-serif;
+    
+  }
+  .clasified{
+  	font-size: 16px;
+    width: 50px;
+  	color: #3c444b;
+  	font-family: "Open Sans Condensed",sans-serif;
+  	font-weight: 700;
+  	text-align: left;
+  }
+  
+  .align{
+  	text-align: center;
+  	font-size: 12px;	
+    color: #a7b9bc;
+    font-weight: 700;
+    padding-left: 4px;	
+  }
+  .ccd{
+  	    text-align: center;
+    font-size: 14px;	
+    color: #3f6192;
+    padding-right: 8px;	
+    border-right: 1px solid #ccd7e3;
+  }
+
+  .espacee{
+  	
+  }
+  .teamStand{
+  	font-size: 14px;
+  	font-weight: 700;
+  	color: #3c444b;
+  	font-family: "Open Sans Condensed",sans-serif;
+  }
+
+	  .positionP{
+  	padding-top: 10px;
+    font-size: 14px;
+    padding-left: 8px;
+    color: #a7b1bc;
+    font-weight: bold;
+    font-family: 'Open Sans',sans-serif;
+    
+  }
+  .dimens{
+  	padding-right: 115px;
+  }
+	#standingBorderTop { 
+	  border : 0;
+	  height: 1px; 
+	  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(30,144,255, 0.85), rgba(0,0,0, 0)); 
+	  color: #c2d6d6;
+	}
+	#standing{
+
+		width: 30vw;
+		height: auto;
+		margin-left: 2vw;
+	}
+  .standingBg{
+    margin-top: 80px;
+    width: 30vw;
+    height: auto;
+    float: left;
+  }
+  .fixtureContainer{
+    height: 120vh;
+    width: 40vw;
+    float: left;
+  }
+  .fixture{
+    border-radius: 2px;
+    width: 40vw;
+    background-color: white;
+    height: 125vh;
+    box-shadow: 0px 5px 6px 0px rgba(50,50,50,0.4);
+  }
+  .textHeda{
+    height: 8vh;
+    width: 40vw;
+  }
+  .textLeft{
+    float: left;
+        margin: 0;
+    font-size: 24px;
+    color: #072a46;
+    font-weight: bold;
+    padding-left: 15px;
+
+  }
+  .textRight{
+    padding-right: 15px;
+    float: right;
+    font-size: 24px;
+    color: #4d8dba;
+    font-weight: bold;
+  }
+   .textHedas{
+    height: 4vh;
+    width: 38vw;
+    margin-left: 1vw;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccd7e3;
+    box-shadow: 0 1px 0 #FFF;
+      
+  }
+  .textLefts{
+    float: left;
+    font-weight: bold;
+    font-size: 18px;   
+    padding-top: 10px;
+    text-decoration: none;
+    color: #4d8dba;
+    padding-left: 25px;
+}
+    
+  .textRights{
+        float: right;
+        padding-top: 10px;
+        padding-right: 25px;
+        font-weight: bold;
+    color: #afc4d3;
+    font-size: 14px;
+    font-family: 'Open Sans Condensed',sans-serif;
+    line-height: 24px;
+  }
+  .fixtureMatchContainer{
+    height: 13vh;
+    margin-left: 1vw;
+    width: 38vw;
+    padding-top: 10px;
+    float: left;
+    border-bottom: 1px solid #ccd7e3;
+    box-shadow: 0 1px 0 #FFF;
+  }
+  .matchData{
+    
+    height: 10vh;
+    float: left;  
+    width: 10vw;
+    color: #98b1c3;
+    padding-left: 20px;
+  }
+  .dataLine{
+    font-size: 14px;
+    padding-bottom: 3px;
+    font-weight: 700;
+    line-height: 2vh;
+  }
+  .dlld{
+    font-size: 12px;
+    padding-bottom: 3px;   
+    line-height: 2vh; 
+  }
+  .wheather{
+    height: 24px;
+    width: 24px;
+  }
+  .weather{
+    height: 10vh;
+    width: 4vw;
+    padding-top: 4vh;
+    float: left;
+    padding-right: 7px;
+  }
+  .matchInfo{
+    height: 10vh;
+    width: 22vw;
+    float: left;
+  }
+  .imgcre{
+    height: 35px;
+    width: 35px;
+  }
+  .firstLogo{
+    padding-left: 2vw;
+      float: left;
+      min-width: 3vw;
+      max-width: 3vw;
+    padding-left: 1vw;
+    padding-top: 2.5vh;  
+  }
+  .firstName{
+    max-width: 5.5vw;
+    min-width: 5.5vw;
+    float: left;
+    text-align: center;
+    padding-left: 1vw;
+    padding-top: 4vh;
+    color: #3c444b;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .versus{
+    float: left;
+    padding-top: 4vh;
+    padding-left: 4px;
+    color: #3c444b;
+    font-size: 12px;
+    font-weight: bold; 
   }
